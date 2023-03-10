@@ -13,20 +13,24 @@ from plexapi.mixins import PosterUrlMixin
 # pip install discord.py==1.7.3
 
 #web address to Plex server e.g., http://192.168.1.19:32400
+#Leave the ' '
 baseurl = 'YOUR_URL'
 
 #Plex token. See: https://www.plexopedia.com/plex-media-server/general/plex-token/
+#Leave the ' '
 plextoken = 'YOUR_TOKEN'
 
 #Discord bot token.
+#Leave the " "
 discordtoken = "YOUR_BOTS_TOKEN"
 
 #To get system(below), run the bot with the above filled out. In the console it'll print out avalable clients to connect to.
 #After first run, stop the bot and place the client in the system = field.
-system = "DESKTOP-6PSFL1D"
+#Leave the " "
+system = "YOUR_SYSTEM_NAME"
 
 #Add the voice channel ID to connect to.
-voicechannel = YOUR_VOICE_CHANNEL
+voicechannel = YOUR_VOICE_CHANNEL_ID
 #________________________________________________________________________________________#
 plex = PlexServer(baseurl, plextoken)
 
