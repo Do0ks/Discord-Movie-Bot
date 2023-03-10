@@ -3,7 +3,7 @@
 <b>Discription:</b>
 Play your personal collection of movies in discord with your friends and family and give them control to watch what they want to! Simple to set up and DOES NOT break Discords TOS!
 
-<b>Prerequisite:</b>
+<b>Prerequisite:</b>\n
 -A Plex media server loaded with the movies you would like to share.
 -A extra Discord user account.
 -A bit of setup time. 
