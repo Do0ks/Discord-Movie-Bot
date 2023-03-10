@@ -16,7 +16,6 @@ That's it! Enjoy!
 
 
 <b><u>FAQ:</u></b>  
-  
 <b>Q)</b> Why do I need a personal account?  
 <b>A)</b> As we know, it's not possible to stream movies from a Discord bot. This will never change so this is the best we can get. Thinking outside the box.  
   
