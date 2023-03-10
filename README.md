@@ -1,5 +1,7 @@
 # Discord-Movie-Bot
 
+![Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjVlNmQ4YTZhNDFiMmYwMjhhYzAxOWE5MjJiZTI2MWI4ZTIyYjNjZSZjdD1n/6zkw5esxBiGtcAQjrq/giphy.gif)
+
 <b><u>Discription:</u></b>  
 Play your personal collection of movies in discord with your friends and family and give them control to watch what they want to! Simple to set up and DOES NOT break Discords TOS!
 
