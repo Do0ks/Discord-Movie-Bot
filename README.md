@@ -1,6 +1,6 @@
 # Discord-Movie-Bot
 
-<b><u>Discription:</u></b>
+<b><u>Discription:</u></b>  
 Play your personal collection of movies in discord with your friends and family and give them control to watch what they want to! Simple to set up and DOES NOT break Discords TOS!
 
 <b><u>Prerequisite:</u></b>  
