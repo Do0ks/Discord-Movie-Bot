@@ -7,8 +7,9 @@ Play your personal collection of movies in discord with your friends and family 
 
 <b><u>Prerequisite:</u></b>  
 -A Plex media server loaded with the movies you would like to share.  
--A extra Discord user account.  
+-A extra Discord user account. (Not required if you don't mind using your account to stream. Recommend a second monitor so you're not tied down streaming) 
 -A bit of setup time.   
+-A second computer is a HUGE help for this.  
 
 <b><u>Preperation:</u></b>  
 Load the code in whatever you want to use to host the bot. Once online, find your plex Token (See: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/ )  
