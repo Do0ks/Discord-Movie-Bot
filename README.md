@@ -7,7 +7,7 @@ Play your personal collection of movies in discord with your friends and family 
 
 <b><u>Prerequisite:</u></b>  
 -A Plex media server loaded with the movies you would like to share.  
--A extra Discord user account. (Not required if you don't mind using your account to stream. Recommend a second monitor so you're not tied down streaming) 
+-A extra Discord user account. (Not required if you don't mind using your account to stream. Recommend a second monitor so you're not tied down streaming)  
 -A bit of setup time.   
 -A second computer is a HUGE help for this.  
 
