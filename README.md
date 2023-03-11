@@ -15,6 +15,7 @@ Play your personal collection of movies in discord with your friends and family 
 Load the code in whatever you want to use to host the bot. Once online, find your plex Token (See: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/ )  
 
 Use your personal account to stream the video to discord on the computer your plex server is located.  
+Follow the instructions in-code.  
 That's it! Enjoy!  
 
 
