@@ -41,3 +41,9 @@ That's it! Enjoy!
 
 <b>Donations:</b>  
 https://paypal.me/automationz?country.x=US&locale.x=en_US
+
+
+<b>More Info on APIs:</b>  
+https://github.com/pkkid/python-plexapi
+https://github.com/Rapptz/discord.py
+
