@@ -12,10 +12,16 @@ Play your personal collection of movies in discord with your friends and family 
 -A second computer is a HUGE help for this.  
 
 <b><u>Preperation:</u></b>  
+-Install Plex server on your hosting PC.  
+-install Plex HTCP on on your hosting PC.  
+-Install Discords official client on your hosting PC.  
+
 Load the code in whatever you want to use to host the bot. Once online, find your plex Token (See: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/ )  
 
-Use your personal account to stream the video to discord on the computer your plex server is located.  
-Follow the instructions in-code.  
+-Follow the instructions in-code.  
+-Use your personal account to log into Discord using the official discord client, start plex server, start plex HTCP.   
+-Stream plex HTCP to discord.  
+
 That's it! Enjoy!  
 
 
