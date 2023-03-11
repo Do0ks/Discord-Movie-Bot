@@ -29,3 +29,6 @@ That's it! Enjoy!
 
 <b>Q)</b> Does the bot come with movies?  
 <b>A)</B> Obviously no. This should go without saying if you choose to stream stolen movies thats on you. I take no responsibility for what you stream. Use your tinkers....  
+
+<b>Donations:</b>  
+https://paypal.me/automationz?country.x=US&locale.x=en_US
