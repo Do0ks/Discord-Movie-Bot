@@ -44,6 +44,7 @@ https://paypal.me/automationz?country.x=US&locale.x=en_US
 
 
 <b>More Info on APIs:</b>  
-https://github.com/pkkid/python-plexapi
-https://github.com/Rapptz/discord.py
+https://github.com/pkkid/python-plexapi  
+https://github.com/Rapptz/discord.py  
+https://pypi.org/project/discord-py-slash-command/  
 
