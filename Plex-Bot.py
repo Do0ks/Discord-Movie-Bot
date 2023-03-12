@@ -12,6 +12,7 @@ from plexapi.mixins import PosterUrlMixin
 # pip install discord-py-slash-command==3.0.1a0
 # pip install discord.py==1.7.3
 # pip install plexapi
+# pip install requests
 
 #web address to Plex server e.g., http://192.168.1.19:32400
 #Leave the ' '
