@@ -215,13 +215,15 @@ async def shuffle(ctx):
 
 @bot.event
 async def on_ready():
-    await bot.wait_until_ready()
-    for channely in bot.get_all_channels():
-        print(channely)
-    channel = bot.get_channel('General')
-    print(bot.user, 'is online. ✔️')
-    print(f"Connected to voice channel: {channel} ✔️")
-    await channel.connect()
-
+    try:
+        await bot.wait_until_ready()
+        for channely in bot.get_all_channels():
+            print(channely)
+        channel = bot.get_channel(voicechannel)
+        print(bot.user, 'is online. ✔️')
+        print(f"Connected to voice channel: {channel.name} ✔️")
+        await channel.connect()
+    except Exception as error:
+        print(error)
 
 bot.run(discordtoken, bot=True, reconnect=True)
