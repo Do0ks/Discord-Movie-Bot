@@ -11,6 +11,11 @@ from plexapi.server import PlexServer
 from plexapi.mixins import PosterUrlMixin
 
 load_dotenv()
+
+if not os.getenv('baseurl'):
+    print('Error. Please specify an environment file or use -e to inject environment variables when running this as docker container.')
+    exit()
+
 #_________________________________Fill This Out_________________________________________#
 # Prerequisites
 # pip install --no-cache-dir -r requirements.txt

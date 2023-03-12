@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
+# Delete the .env file
+RUN rm /app/.env
+
 # Install the required packages
 RUN pip install --no-cache-dir -r requirements.txt
 
