@@ -1,5 +1,7 @@
 import discord
 import random
+import os
+from dotenv import load_dotenv
 import requests
 from discord.ext import commands
 from discord_slash import SlashCommand
@@ -7,32 +9,31 @@ from discord_slash.utils.manage_commands import create_choice, create_option
 from plexapi.video import Movie, Video
 from plexapi.server import PlexServer
 from plexapi.mixins import PosterUrlMixin
+
+load_dotenv()
 #_________________________________Fill This Out_________________________________________#
 # Prerequisites
-# pip install discord-py-slash-command==3.0.1a0
-# pip install discord.py==1.7.3
-# pip install plexapi
-# pip install requests
+# pip install --no-cache-dir -r requirements.txt
 
 #web address to Plex server e.g., http://192.168.1.19:32400
 #Leave the ' '
-baseurl = 'YOUR_URL'
+baseurl = os.getenv('baseurl')
 
 #Plex token. See: https://www.plexopedia.com/plex-media-server/general/plex-token/
 #Leave the ' '
-plextoken = 'YOUR_TOKEN'
+plextoken = os.getenv('plextoken')
 
 #Discord bot token.
 #Leave the " "
-discordtoken = "YOUR_BOTS_TOKEN"
+discordtoken = os.getenv('discordtoken')
 
 #To get system(below), run the bot with the above filled out. In the console it'll print out avalable clients to connect to.
 #After first run, stop the bot and place the client in the system = field.
 #Leave the " "
-system = "YOUR_SYSTEM_NAME"
+system = os.getenv('system')
 
 #Add the voice channel ID to connect to.
-voicechannel = YOUR_VOICE_CHANNEL_ID
+voicechannel = os.getenv('voicechannel')
 #________________________________________________________________________________________#
 plex = PlexServer(baseurl, plextoken)
 
@@ -108,7 +109,7 @@ async def info(ctx, *, movie):
             handler.write(img_data)
         duration = int(play.duration / 60000)
         embed = discord.Embed(title=f"Infor For: {movie}", description=f"{play.summary}\n\n**Rotten Tomatoes Rating:** {play.audienceRating}\n**Content Rating:** {play.contentRating}\n**Duration:** {duration} Minutes", color=0xf5dd03)
-        file = discord.File("C:/Users\conta\Desktop\Bots\PlexBot\movie.jpg", filename="movie.jpg")
+        file = discord.File(f"{os.getcwd()}/movie.jpg", filename="movie.jpg")
         embed.set_image(url="attachment://movie.jpg")
         embed.set_footer(text=f"{play.year} - {play.studio}")
         await ctx.send(file=file, embed=embed)
@@ -134,7 +135,7 @@ async def play(ctx, *, movie):
             handler.write(img_data)
         duration = int(play.duration / 60000)
         embed = discord.Embed(title=f"Playing: {movie}", description=f"{play.summary}\n\n**Rotten Tomatoes Rating:** {play.audienceRating}\n**Content Rating:** {play.contentRating}\n**Duration:** {duration} Minutes", color=0xf5dd03)
-        file = discord.File("C:/Users\conta\Desktop\Bots\PlexBot\movie.jpg", filename="movie.jpg")
+        file = discord.File(f"{os.getcwd()}/movie.jpg", filename="movie.jpg")
         embed.set_image(url="attachment://movie.jpg")
         embed.set_footer(text=f"{play.year} - {play.studio}")
         await ctx.send(file=file, embed=embed)
@@ -205,7 +206,7 @@ async def shuffle(ctx):
         handler.write(img_data)
     duration = int(play.duration / 60000)
     embed = discord.Embed(title=f"**Playing:** {rc}", description=f"{play.summary}\n\n**Rotten Tomatoes Rating:** {play.audienceRating}\n**Content Rating:** {play.contentRating}\n**Duration:** {duration} Minutes" ,color=0xf5dd03)
-    file = discord.File("C:/Users\conta\Desktop\Bots\PlexBot\movie.jpg", filename="movie.jpg")
+    file = discord.File(f"{os.getcwd()}/movie.jpg", filename="movie.jpg")
     embed.set_image(url="attachment://movie.jpg")
     embed.set_footer(text=f"{play.year} - {play.studio}")
     await ctx.send(file=file, embed=embed)
@@ -215,9 +216,11 @@ async def shuffle(ctx):
 @bot.event
 async def on_ready():
     await bot.wait_until_ready()
-    channel = bot.get_channel(voicechannel)
+    for channely in bot.get_all_channels():
+        print(channely)
+    channel = bot.get_channel('General')
     print(bot.user, 'is online. ✔️')
-    print(f"Connected to voice channel: {channel.name} ✔️")
+    print(f"Connected to voice channel: {channel} ✔️")
     await channel.connect()
 
 
