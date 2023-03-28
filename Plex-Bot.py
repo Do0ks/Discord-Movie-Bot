@@ -29,15 +29,16 @@ baseurl = os.getenv('baseurl')
 plextoken = os.getenv('plextoken')
 
 #Discord bot token.
-#Leave the " "
+#Leave the ' '
 discordtoken = os.getenv('discordtoken')
 
 #To get system(below), run the bot with the above filled out. In the console it'll print out avalable clients to connect to.
 #After first run, stop the bot and place the client in the system = field.
-#Leave the " "
+#Leave the ' '
 system = os.getenv('system')
 
 #Add the voice channel ID to connect to.
+#Leave the ' '
 voicechannel = os.getenv('voicechannel')
 #________________________________________________________________________________________#
 plex = PlexServer(baseurl, plextoken)
