@@ -114,7 +114,7 @@ async def info(ctx, *, movie):
         with open('movie.jpg', 'wb') as handler:
             handler.write(img_data)
         duration = int(play.duration / 60000)
-        embed = discord.Embed(title=f"Infor For: {movie}", description=f"{play.summary}\n\n**Rotten Tomatoes Rating:** {play.audienceRating}\n**Content Rating:** {play.contentRating}\n**Duration:** {duration} Minutes", color=0xf5dd03)
+        embed = discord.Embed(title=f"Info For: {movie}", description=f"{play.summary}\n\n**Rotten Tomatoes Rating:** {play.audienceRating}\n**Content Rating:** {play.contentRating}\n**Duration:** {duration} Minutes", color=0xf5dd03)
         file = discord.File(f"{os.getcwd()}/movie.jpg", filename="movie.jpg")
         embed.set_image(url="attachment://movie.jpg")
         embed.set_footer(text=f"{play.year} - {play.studio}")
