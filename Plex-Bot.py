@@ -19,7 +19,7 @@ baseurl = 'LOCAL_IP_HERE'  # Web address to Plex server e.g., http://192.168.1.1
 plextoken = 'PLEX_TOKEN_HERE'  # Plex token. See: https://www.plexopedia.com/plex-media-server/general/plex-token/
 discordtoken = "DISCORD_BOT_TOKEN_HERE"  # Discord bot token
 system = "SYSTEM_ID_HERE"  # After first run, update this with the client ID
-voicechannel = VOICE_CHANNEL_ID_HERE  # Add the voice channel ID to connect to
+voicechannel = 'VOICE_CHANNEL_ID_HERE'  # Add the voice channel ID to connect to
 #________________________________________________________________________________________#
 
 plex = PlexServer(baseurl, plextoken)
