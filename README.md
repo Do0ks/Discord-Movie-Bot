@@ -1,5 +1,5 @@
 # Discord-Movie-Bot
-*Added a revised code, Use this if you're having issues with the envy and docker aspects of the orginal code.*
+*Updated to match newest Discord.py using its built in slash commands.*
 
 ![Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjVlNmQ4YTZhNDFiMmYwMjhhYzAxOWE5MjJiZTI2MWI4ZTIyYjNjZSZjdD1n/6zkw5esxBiGtcAQjrq/giphy.gif)
 
