@@ -10,21 +10,19 @@ from discord import app_commands
 from discord.ext import commands
 import random
 import requests
-from plexapi.video import Movie, Video
 from plexapi.server import PlexServer
 from plexapi.mixins import PosterUrlMixin
 
-#_________________________________Fill This Out_________________________________________#
-baseurl = 'LOCAL_IP_HERE'  # Web address to Plex server e.g., http://192.168.1.19:32400
-plextoken = 'PLEX_TOKEN_HERE'  # Plex token. See: https://www.plexopedia.com/plex-media-server/general/plex-token/
-discordtoken = "DISCORD_BOT_TOKEN_HERE"  # Discord bot token
-system = "SYSTEM_ID_HERE"  # After first run, update this with the client ID
-voicechannel = 'VOICE_CHANNEL_ID_HERE'  # Add the voice channel ID to connect to
-#________________________________________________________________________________________#
+# Fill out your configurations
+baseurl = 'LOCAL_IP_HERE'
+plextoken = 'PLEX_TOKEN_HERE'
+discordtoken = "DISCORD_BOT_TOKEN_HERE"
+system = "SYSTEM_ID_HERE"
+voicechannel = VOICE_CHANNEL_ID_HERE
 
 plex = PlexServer(baseurl, plextoken)
-
 intents = discord.Intents.default()
+intents.message_content = True  # Enable message content intent if required
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 class PlexBot(commands.Cog):
@@ -196,5 +194,8 @@ async def on_ready():
     except Exception as e:
         print(f"Failed to sync commands: {e}")
 
-bot.add_cog(PlexBot(bot))
+async def setup():
+    await bot.add_cog(PlexBot(bot))
+
+bot.loop.run_until_complete(setup())
 bot.run(discordtoken)
